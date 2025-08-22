@@ -42,21 +42,9 @@ function Marketplace() {
           deals:  []
         });
 
-    // const [name, setName ] = useState("");    
-    // const [email, setemail ] = useState("");
-    // const [password, setPassword ] = useState("");
     const [merchantID, setMerchantId] = useState(-1);
     const [dataLoaded, setDataLoaded] = useState(false);
 
-    // useEffect(() => {   // use useEffect when API calls are triggered systematically or automattically
-    //   axios.get(`http://localhost:8080/deals`)
-    //   // axios.get(`http://localhost:3000/deals`)
-    //   .then(res => {
-    //     setDealsData(res.data)
-    //     console.log(res.data);
-    //     console.log(res.data.deals.length);
-    //   })
-    // }, [])
 
     useEffect(() => {
       async function getCategoriesData() {
@@ -66,41 +54,30 @@ function Marketplace() {
       .then((data) => {
         setDealsData(data)
         console.log('deals data obtained!');
-        console.log(data);
         setDataLoaded(true);
-        // console.log(res.data.deals.length);
-        console.log((dealsData != null) + " || " + (dealsData.bisCategories != null) + " " + (dealsData.bisCategories.length));
         setupDeals(data);
       })
       }
     
       getCategoriesData();
-
       return () => {
         // code want to run on unmount
       }
     }, []) //<-- dependency array
 
     
-
-    // useEffect(() => {
       function setupDeals(dealsData : {bisCategories: [], campaigns: [{}], deals:  []}) {
-        console.log((dealsData != null) + " " + (dealsData.bisCategories != null) + " " + (dealsData.bisCategories.length));
-        console.log(dealsData.bisCategories.length + " " + dealsData.campaigns.length + " " + dealsData.deals.length);
         
         if (dealsData != null && dealsData.bisCategories != null && dealsData.bisCategories.length > 1) {
           dealsData.bisCategories.forEach((category : Category) => {
-            console.log(category);
+            // console.log(category);
             const deals = dealsData.deals.filter(function(deal:Deal){
               return category.dealIds.indexOf(deal.id) < 0;
             });
-            console.log('dealsssssssssssss');
-            console.log(deals);
             category.deals = deals;
           })
         }
       }
-      // }, dataLoaded)
 
     function getCategoryDeals(dealIds: [number]) : Deal[] {
       return dealsData.deals.filter((deal:Deal) => dealIds.includes(deal.id));
@@ -152,10 +129,6 @@ function Marketplace() {
       setIsShown((isShownn => !isShownn));
     }
 
-    function showText(merchantId : number) {
-      console.log("HI" + " " + merchantId);
-    }
-
     // async function checkOutMerchant(merchantId : number) {
     //   console.log("M ID:" + " " + merchantId);
     //   let merchant = await getMerchantById(merchantId);
@@ -166,13 +139,7 @@ function Marketplace() {
     //   }
     // }
     async function checkOutMerchant(merchantId : number) {
-      console.log("M ID:" + " " + merchantId);
-      // let merchant = await getMerchantById(merchantId);
-      // if (merchant != null) {
-      //   console.log('Merchant found!');
-      //   console.log(merchant);
-        navigate('/' + merchantId, {state:{merchantId:merchantId}});
-      // }
+
     }  
   const [name, setName] = useState("");
   const [age, setAge] = useState(0);
@@ -202,23 +169,10 @@ function Marketplace() {
   
 
     return (
-      // <Suspense fallback={<div>Loading...</div>}>
-      //   {
-      //   dealsData.bisCategories.map((merchantProps: Category) => {
-      //     return (
-      //       <CategoryComponent merchantProps={merchantProps}></CategoryComponent>
-      //     )
-      //   })
-      // }
-      // </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-        {
-
+      {
         dealsData.bisCategories.map((merchantProps: Category) => {
           return (
-              // <CategoryComponent merchantProps={merchantProps}></CategoryComponent>
-            
-            // <h1>{merchantProps.deals.length}</h1>
             <CategoryComponent id={merchantProps.id} enumValue={merchantProps.enumValue} text={merchantProps.text} getMerchant={setMerchantId} deals={merchantProps.deals}></CategoryComponent>
           )
         })
