@@ -1,0 +1,11 @@
+#merchant-deal {
+    border: solid 1pt;
+    border-color: black;
+    margin-bottom: 1%;
+}
+
+.deal-item-image{
+    padding-top: 15px;
+    align-content: center;
+    display: inline-flex;
+}

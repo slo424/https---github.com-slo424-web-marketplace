@@ -1,0 +1,638 @@
+/* @import "/src/app/scss/breakpoints.scss"; */
+
+
+/* @import "~swiper/css";
+@import "~swiper/css/pagination";
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff; */
+
+  /* Center slide text vertically */
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-wrapper {
+    align-items: center;
+} */
+
+.search-input {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.merchant-name {
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+
+    /* @include media-below(600px) {
+        width: 250px;
+    }
+
+    @include media-range(601px, 768px) {
+        width: 650px;
+    }
+
+    @include media-range(769px, 1024px) {
+        width: 790px;
+    } */
+}
+
+.mainTitle {
+    background: none;
+    border: none;
+    /* color:white; */
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 42px;
+}
+
+#marketplace-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    height: 306px;
+    width: 100%;
+    margin-top: 158px;
+    background-color: #006E41;
+    align-items: center;
+    margin-top: 0px;
+
+    /* @include media-below(810px) {
+        height: 200px;
+    } */
+}
+
+#brand-search {
+    width: 430px;
+    border: none;
+    background: #FFF;
+    box-shadow: 0px 5px 20px 0px #0303031A;
+    border-radius: 5px;
+    position: relative;
+
+    /* @include media-below(810px) {
+        width: 250px;
+    } */
+}
+
+.merchant-row {
+    width: 1400px;
+    display: inline-block;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem;
+
+    /* @include media-below(600px) {
+        width: 250px;
+    }
+
+    @include media-range(601px, 768px) {
+        width: 650px;
+    }
+
+    @include media-range(769px, 1024px) {
+        width: 790px;
+    } */
+}
+
+.category-button {
+    width: 99px;
+    height: 41px;
+    left: 1129px;
+    top: 378px;
+
+    background: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    box-sizing: border-box;
+    border-radius: 60px;
+}
+
+.category-title {
+    font-size: 28px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-left: 4% !important;
+    margin-bottom: 0px;
+    cursor: pointer;
+    color: #494C56;
+}
+
+.category-title:hover {
+    color: #8942F4 !important;
+}
+
+.deal-item {
+    width: 202px !important;
+    height: 190px;
+    text-align: center !important;
+    border: 1px solid var(--surface-d);
+    align-content: center;
+
+    .deal-item-content {
+        width: 115px !important;
+        border: 2px solid #dee2e6 !important;
+        border-radius: 30px;
+        margin-top: 20px;
+        text-align: center !important;
+    }
+
+    .deal-item-content:hover {
+        transform: scale(1.05);
+    }
+
+    .see-all-card {
+        width: 115px !important;
+        height: 115px !important;
+        background: linear-gradient(0deg, #F1E7FD, #F1E7FD), #FFFFFF;
+        border: 3px solid #dee2e6 !important;
+        border-radius: 30px;
+        text-align: center !important;
+        align-content: center;
+        display: grid;
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        color: #8942F4;
+    }
+}
+
+.ad-banner {
+    width: 1300px !important;
+    height: 507px !important;
+    border: none;
+    border-radius: 30px;
+    margin-top: 40px;
+    text-align: center !important;
+}
+
+.card-title {
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    color: #77808A;
+    white-space: nowrap;
+}
+
+.card-body {
+    font-size: x-small;
+    padding:5px !important;
+}
+
+.see-all {
+    margin-right:5% !important;
+}
+
+.see-all-button {
+    color: #8942F4;
+    vertical-align: middle;
+    display: inline-grid;
+}
+
+.merchant-row {
+    /* // ::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+    //     margin-top: -3%;
+    // } */
+
+    ::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
+        margin-top: -3%;
+    }
+}
+
+.disable-carousel-navigation {
+    /* // ::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+    //     visibility: hidden;
+    //     pointer-events: none;
+    // } */
+
+    ::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+.disable-mobile-carousel-navigation {
+    /* ::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+        visibility: hidden;
+        pointer-events: none;
+    } */
+
+    ::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
+        visibility: hidden;
+        pointer-events: none;
+        display: none;
+    }
+}
+
+.disable-left-carousel-navigation {
+    ::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
+        visibility: hidden;
+        pointer-events: none;
+        display: none;
+    }
+}
+
+.p-carousel-content ul li {
+    display:none;
+}
+
+.p-carousel .p-carousel-indicators {
+    margin: 0px 1px !important;
+    height: 0px !important;
+    overflow: hidden !important;
+    padding: 7px 10px 8px !important;
+    display: none !important;
+    border: 0 !important;
+}
+
+.p-carousel-indicators {
+    display: none !important;
+}
+
+:host ::ng-deep p-carousel {
+    .p-carousel-indicators {
+        display: none !important;
+    }
+}
+
+/* @include mobile-ssm() {
+    .mainTitle {
+        background: none;
+        border: none;
+        color:white;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 33px;
+        text-align: center;
+    }
+
+    .merchant-row {
+        width: 360px;
+        display: inline-block;
+        padding-left: 0%;
+    }
+
+    .category-title {
+        margin-left: 3% !important;
+        font-size: large;
+    }
+
+    .deal-item {
+        width: 60px !important;
+        height: 114px !important;
+        text-align: center !important;
+        border: 1px solid var(--surface-d);
+        border-color: #c1c1c1;
+        display: block;
+    
+        .deal-item-content {
+            width: 65px !important;
+            height: 65px !important;
+            border: 0px solid var(--surface-d);
+            border-radius: 10px;
+            margin: .3rem;
+            text-align: center !important;
+        }
+        
+        .see-all-card {
+            width: 58px !important;
+            height: 58px !important;
+            background: linear-gradient(0deg, #F1E7FD, #F1E7FD), #FFFFFF;
+            border: 3px solid #dee2e6 !important;
+            border-radius: 10px;
+            text-align: center !important;
+            align-content: center;
+            display: grid;
+            font-family: Roboto;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            color: #8942F4;
+        }
+    }
+
+    .card-title {
+        font-size: x-small;
+        font-family: Roboto;
+        font-weight: 400;
+        color: #77808A;
+        white-space: nowrap;
+    }
+
+    .card-body {
+        font-size: x-small;
+    }
+
+    .ad-banner {
+        width: 341px !important;
+        height: 115px !important;
+        border: none;
+        border-radius: 10px;
+        margin-top: 40px;
+        text-align: center !important;
+    }
+    
+    .merchant-row {
+        // ::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+        //     margin-top: -4%;
+        // }
+
+        ::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
+            margin-top: -4%;
+        }
+    }
+}
+
+@include mobile-sm() {
+    .mainTitle {
+        background: none;
+        border: none;
+        color:white;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 33px;
+        text-align: center;
+    }
+
+    .merchant-row {
+        width: 393px;
+        display: inline-block;
+        padding-left: 0%;
+    }
+
+    .category-title {
+        margin-left: 3% !important;
+        font-size: large;
+    }
+
+    .deal-item {
+        width: 60px !important;
+        height: 114px !important;
+        text-align: center !important;
+        border: 1px solid var(--surface-d);
+        border-color: #c1c1c1;
+        display: block;
+    
+        .deal-item-content {
+            width: 65px !important;
+            height: 65px !important;
+            border: 0px solid var(--surface-d);
+            border-radius: 10px;
+            margin: .3rem;
+            text-align: center !important;
+        }
+        
+        .see-all-card {
+            width: 58px !important;
+            height: 58px !important;
+            background: linear-gradient(0deg, #F1E7FD, #F1E7FD), #FFFFFF;
+            border: 3px solid #dee2e6 !important;
+            border-radius: 10px;
+            text-align: center !important;
+            align-content: center;
+            display: grid;
+            font-family: Roboto;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            color: #8942F4;
+        }
+    }
+
+    .card-title {
+        font-size: x-small;
+        font-family: Roboto;
+        font-weight: 400;
+        color: #77808A;
+        white-space: nowrap;
+    }
+
+    .card-body {
+        font-size: x-small;
+    }
+
+    .ad-banner {
+        width: 341px !important;
+        height: 115px !important;
+        border: none;
+        border-radius: 10px;
+        margin-top: 40px;
+        text-align: center !important;
+    }
+    
+    .merchant-row {
+        // ::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+        //     margin-top: -4%;
+        // }
+
+        ::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
+            margin-top: -4%;
+        }
+    }
+}
+
+@include mobile() {
+    .mainTitle {
+        background: none;
+        border: none;
+        color:white;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;        
+        text-align: center;
+    }
+
+    .merchant-row {
+        // width: 1400px;
+        // display: inline-block;
+    }
+
+    .category-title {
+        font-size: large;
+    }
+
+    .deal-item {
+        width: 60px !important;
+        height: 120px !important;
+        text-align: center !important;
+        border: 1px solid var(--surface-d);
+        border-color: #c1c1c1;
+        display: block;
+    
+        .deal-item-content {
+            width: 58px !important;
+            height: 58px !important;
+            border: 0px solid var(--surface-d);
+            border-radius: 10px;
+            margin: .3rem;
+            text-align: center !important;
+            border-radius: 20px;
+        }
+        
+        .see-all-card {
+            width: 58px !important;
+            height: 58px !important;
+            background: linear-gradient(0deg, #F1E7FD, #F1E7FD), #FFFFFF;
+            border: 3px solid #dee2e6 !important;
+            border-radius: 20px;
+            text-align: center !important;
+            align-content: center;
+            display: grid;
+            font-family: Roboto;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            color: #8942F4;
+        }
+    }
+
+    .card-title {
+        font-size: x-small;
+    }
+
+    .card-body {
+        font-size: x-small;
+    }
+
+    .ad-banner {
+        width: 341px !important;
+        height: 115px !important;
+        border: none;
+        border-radius: 10px;
+        margin-top: 40px;
+        text-align: center !important;
+    }
+
+    .merchant-row {
+        // ::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+        //     margin-top: -4%;
+        // }
+    
+        ::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
+            margin-top: -4%;
+        }
+    }
+}
+
+@include tablet() {
+    .mainTitle {
+        background: none;
+        border: none;
+        color:white;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 33px;        
+        text-align: center;
+    }
+
+    .merchant-row {
+        width: 790px !important;
+        // display: inline-block;
+        padding-left: 0%;
+    }
+
+    .category-title {
+        font-size: large;
+    }
+
+    .deal-item {
+        width: 150px !important;
+        height: 150px !important;
+        text-align: center !important;
+        border: 1px solid var(--surface-d);
+        // border-color: #c1c1c1;
+        display: block;
+    
+        .deal-item-content {
+            width: 80px !important;
+            border: 0px solid var(--surface-d);
+            border-radius: 10px;
+            margin: .3rem;
+            text-align: center !important;
+        }
+        
+        .see-all-card {
+            width: 80px !important;
+            height: 80px !important;
+            background: linear-gradient(0deg, #F1E7FD, #F1E7FD), #FFFFFF;
+            border: 3px solid #dee2e6 !important;
+            border-radius: 10px;
+            text-align: center !important;
+            align-content: center;
+            display: grid;
+            font-family: Roboto;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            color: #8942F4;
+        }
+    }
+
+    .card-title {
+        font-size: x-small;
+    }
+
+    .card-body {
+        font-size: x-small;
+    }
+
+    .ad-banner {
+        width: 740px !important;
+        height: 250px !important;
+        border: none;
+        border-radius: 10px;
+        margin-top: 40px;
+        text-align: center !important;
+    }
+
+    .merchant-row {
+        // ::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+        //     margin-top: -7%;
+        // }
+    
+        ::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
+            margin-top: -7%;
+        }
+    }
+} */

@@ -1,0 +1,299 @@
+/* @import "/src/app/scss/breakpoints.scss"; */
+
+footer {
+    width: 100%;
+    height: 301px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+footer .main-footer {
+    height: 254px;
+    background-color: #750DEA;
+}
+
+footer .copyright-footer {
+    height: 47px;
+    background-color: #8942F4;
+    display: grid;
+    align-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: white;
+}
+
+footer ul {
+    text-align: justify;
+    display: inline-block;
+}
+
+footer ul:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+footer ul:before {
+    content: '';
+    display: block;
+    margin-top: -1.25em;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 10.5em;
+    position: relative;
+    top: 1.25em;
+    cursor: pointer;
+}
+
+footer .terms {
+    margin-top: 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: white;
+}
+
+footer .terms-conditions {
+    width: 735px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/* @include mobile-ssm() {
+    footer {
+        width: 100%;
+        height: 585px;
+        color: white;
+        // text-align: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+
+        .main-footer {
+            height: 533px;
+            background-color: #750DEA;
+        }
+
+        .copyright-footer {
+            height: 52px;
+            background-color: #8942F4;
+            // display: grid;
+            // align-content: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 18px;
+            color: white;
+        }
+
+        ul {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin-top: 65px;
+        }
+
+        li {
+            width: 100%;
+            margin-right: 0px;
+        }
+
+        .terms {
+            margin-top: 45px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            text-decoration-line: underline;
+            color: white;
+        }
+
+        .terms-conditions {
+            width: 333px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 15px;
+            text-align: center;            
+            color: white;
+        }
+
+        .app-buttons {
+            width: 158px;
+            height: 52px;
+            margin: 10px;
+        }
+    }
+}
+
+@include mobile-sm() {
+    footer {
+        width: 100%;
+        height: 585px;
+        color: white;
+        // text-align: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+
+        .main-footer {
+            height: 533px;
+            background-color: #750DEA;
+        }
+
+        .copyright-footer {
+            height: 52px;
+            background-color: #8942F4;
+            // display: grid;
+            // align-content: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 18px;
+            color: white;
+        }
+
+        ul {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin-top: 65px;
+        }
+
+        li {
+            width: 100%;
+            margin-right: 0px;
+        }
+
+        .terms {
+            margin-top: 45px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            text-decoration-line: underline;
+            color: white;
+        }
+
+        .terms-conditions {
+            width: 333px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 15px;
+            text-align: center;            
+            color: white;
+        }
+
+        .app-buttons {
+            width: 158px;
+            height: 52px;
+            margin: 10px;
+        }
+    }
+}
+
+@include mobile() {
+}
+
+@include tablet() {
+    footer {
+        width: 100%;
+        height: 585px;
+        color: white;
+        // text-align: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+
+        .main-footer {
+            height: 533px;
+            background-color: #750DEA;
+        }
+
+        .copyright-footer {
+            height: 52px;
+            background-color: #8942F4;
+            // display: grid;
+            // align-content: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: white;
+        }
+
+        ul {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin-top: 65px;
+        }
+
+        li {
+            width: 100%;
+            margin-right: 0px;
+        }
+
+        .terms {
+            margin-top: 45px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            text-decoration-line: underline;
+            color: white;
+        }
+
+        .terms-conditions {
+            width: 540px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 15px;
+            text-align: center;            
+            color: white;
+        }
+
+        .app-buttons {
+            width: 158px;
+            height: 52px;
+            margin: 10px;
+        }
+    }
+} */
